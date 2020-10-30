@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url("https://i.pinimg.com/originals/75/ac/ea/75acea3a9b4238ca27236bd5b523d4cd.jpg") no-repeat fixed center;
+}
+.navbar-brand{
+    font-size: 1.5em;
+}
+.nav-link{
+    font-size: 1em;
+}
+main{
+    margin-top: 12em;
+}
+#countTime{
+    font-size: 2em;
+}
+#inc, #dec{
+    font-size: 1.25em;
+}
+@media (min-width: 360px) {
+    body{font-size: 10px;}
+}
+@media (min-width: 550px) {
+    body{font-size: 12px;}
+}
+@media (min-width: 768px) {
+    body{font-size: 14px;}
+}
+@media (min-width: 1024px) {
+    body{font-size: 16px;}
+}
