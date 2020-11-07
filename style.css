@@ -20,6 +20,9 @@ main{
 #inc, #dec{
     font-size: 1.25em;
 }
+#inc, #dec{
+    padding: 0.25rem 1rem !important;
+}
 @media (min-width: 360px) {
     body{font-size: 10px;}
 }

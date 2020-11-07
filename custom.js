@@ -1,4 +1,4 @@
-var time = document.getElementById("countTime").textContent;
+var time = document.getElementById("countTime").innerText;
 var countdown = time * 60 * 1000;
 const inc = document.getElementById("inc");
 const dec = document.getElementById("dec");
@@ -6,14 +6,22 @@ const start = document.getElementById('start');
 const stop = document.getElementById('stop');
 const reset = document.getElementById('reset');
 
-inc.addEventListener("click", () => {
+console.log(time);
+
+inc.addEventListener("click", (e) => {
+    e.preventDefault();
+    countdown = (time++) * 60 * 1000;
+    $("#countTime").html(countdown / (60*1000));
     console.log("add clicked");
-    time += 1;
+    console.log(time);
 });
 
-dec.addEventListener("click", () => {
+dec.addEventListener("click", (e) => {
+    e.preventDefault();
+    countdown = (time--) * 60 * 1000;
+    $("#countTime").html(countdown / (60*1000));
     console.log("minus clicked");
-    time -= 1;
+    console.log(time);
 });
 
 start.addEventListener('click', () => {
