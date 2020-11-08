@@ -6,22 +6,16 @@ const start = document.getElementById('start');
 const stop = document.getElementById('stop');
 const reset = document.getElementById('reset');
 
-console.log(time);
-
 inc.addEventListener("click", (e) => {
-    e.preventDefault();
-    countdown = (time++) * 60 * 1000;
+    time++;
+    countdown = time * 60 * 1000;
     $("#countTime").html(countdown / (60*1000));
-    console.log("add clicked");
-    console.log(time);
 });
 
 dec.addEventListener("click", (e) => {
-    e.preventDefault();
-    countdown = (time--) * 60 * 1000;
+    time--
+    countdown = time * 60 * 1000;
     $("#countTime").html(countdown / (60*1000));
-    console.log("minus clicked");
-    console.log(time);
 });
 
 start.addEventListener('click', () => {
