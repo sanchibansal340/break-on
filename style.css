@@ -3,7 +3,8 @@
     margin: 0;
 }
 body{
-    background: url("https://i.pinimg.com/originals/75/ac/ea/75acea3a9b4238ca27236bd5b523d4cd.jpg") no-repeat fixed center;
+    background: url("./background.jpg") no-repeat fixed center;
+    background-size: cover;
 }
 .navbar-brand{
     font-size: 1.5em;
@@ -15,7 +16,11 @@ main{
     margin-top: 12em;
 }
 #countTime{
-    font-size: 3em;
+    font-size: 3.5em;
+    text-shadow: 2px 6px rgba(0, 0, 0, 0.4);
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 #inc, #dec{
     font-size: 1.25em;
